@@ -1,0 +1,412 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/imagenes/fondo.jpg);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+header, nav, main, footer {
+  padding: 20px;
+}
+#arriba {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para el header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  color: #ecf0f1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+li {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 13px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+nav ul li a:hover {
+  background-color:#fdfeff;
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/imagenes/fondo.jpg);
+
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Estilo para la sección de Soft Skills */
+#habilidades {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 90%; /* Ancho máximo para dispositivos pequeños */
+  width: 100%; /* Asegura que tome el 100% del ancho disponible */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+#habilidades h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#habilidades ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#habilidades ul li {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center; /* Alineación del texto al centro */
+  word-wrap: break-word; /* Permite el ajuste de palabras largas */
+  padding: 0 10px; /* Añade padding horizontal para evitar que el texto toque los bordes */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+#habilidades ul li::before {
+  content: "✓";
+  color: #4CAF50;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0; /* Evita que el icono de verificación se reduzca */
+}
+
+#habilidades:hover{
+  transition: transform 0.5s ease; 
+  transform: scale(1.1); 
+}
+
+.profile-picture {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.profile-picture img {
+  width: 300px; /* Tamaño de la imagen de perfil */
+}
+
+.profile-picture:hover{
+  transition: transform 0.5s ease; 
+  transform: scale(1.1); 
+}
+
+/* Estilos para Contacto */
+#contacto {
+  text-align: center;
+  backdrop-filter: contrast(0.5);
+  ;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.contact-icons img {
+  width: 50px; 
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+/* Estilos de fondo */
+.fondo1 {
+  backdrop-filter: contrast(0.3);
+  color: black;
+  text-decoration: none;
+}
+
+.fondo2 {
+  backdrop-filter: contrast(0.5);
+  color: #010203;
+}
+
+.proyectos {
+  backdrop-filter: brightness(0.5);
+  color: black;
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  
+}
+
+.proyectos h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 20px;
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+}
+
+/* Estilos para proyectos */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: black;
+}
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Estilos responsivos */
+header, nav, main, footer {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.proyectos {
+  width: 80%;
+  overflow-x: hidden; 
+}
+
+.gallery-wrapper {
+  width: 90%; 
+  margin: 0 auto; 
+  overflow-x: auto; 
+}
+
+.gallery-container {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+
+.project {
+  flex: 0 0 auto;
+  width: 300px;
+  color: white;
+  border: 1px solid #ccc;
+}
+.project a:hover{
+color: black;
+
+}
+
+.project img {
+  width: 300px;
+  height: 300px;
+  
+}
+.project img:hover{
+transition: transform 0.5s ease; 
+transform: scale(1.1); 
+}
+
+.project h3 {
+  margin: 10px 0;
+}
+
+.project p {
+  margin: 0;
+}
+nav.show {
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  
+}
+
+nav ul li {
+  margin: 10px 0;
+  background-color: #cccaca;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: black;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #d35400;
+  
+}
+
+/* Estilos para tabletas y dispositivos de pantalla más grande */
+@media (min-width: 860px) {
+  header, nav, main, footer {
+    padding: 40px;
+  }
+  main{
+    flex-direction: column;
+  }
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    display: block;
+    position: sticky;
+    top: 5px;    
+    width: 90%;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: black;
+  }
+  #habilidades ul {
+    flex-direction: row;
+  }
+  form{
+    width: 70%;
+
+  }
+  #toggleMenu {
+    display: none;
+  }
+  
+}
